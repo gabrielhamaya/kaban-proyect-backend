@@ -1,0 +1,33 @@
+{
+  "name": "kaban-proyect-backend",
+  "version": "1.0.0",
+  "description": "backend for personal proyect",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "postinstall": "npm run compile",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielhamaya/kaban-proyect-backend.git"
+  },
+  "author": "Gabriel Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielhamaya/kaban-proyect-backend/issues"
+  },
+  "homepage": "https://github.com/gabrielhamaya/kaban-proyect-backend#readme",
+  "dependencies": {
+    "@apollo/server": "^4.0.1",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "typescript": "^4.8.4"
+  }
+}
